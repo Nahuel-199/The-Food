@@ -1,0 +1,66 @@
+.container-search{
+    background-image: url('../../img/Fondo4.jpg');
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    background-size: cover;
+}
+
+.input-search{
+    width: 310px;
+    margin-left: 20%;
+}
+
+.Logo {
+    display: inline-flex;
+    width: 10rem;
+    margin-left: 0%;
+  }  
+
+  .create {
+    display: flex;
+    margin-left: 13%;
+  }
+
+  .icon{
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+  }
+
+  .create-nav{
+    color: rgb(246, 246, 246);
+    font-family: 'Urbanist', sans-serif;
+    font-weight: 500;
+    font-size: 26px;
+  }
+
+  @media screen and (max-width: 480px){
+    .container-search{
+      width: 100%;
+    }
+
+    .input-search{
+      width: 200px;
+      margin-left: 8%;
+  }
+
+  .Logo {
+    display: inline-flex;
+    width: 4rem;
+    margin-left: 0%;
+  }  
+
+  .create {
+    display: flex;
+    margin-left: 6%;
+  }
+
+  .create-nav{
+    color: rgb(246, 246, 246);
+    font-family: 'Urbanist', sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+  }
+  }

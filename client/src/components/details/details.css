@@ -1,0 +1,245 @@
+.container-detail {
+  background-image: url("../../img/Fondo4.jpg");
+  background-size: contain;
+  height: 987px;
+  margin-top: -70px;
+}
+
+.detail {
+  display: inline-block;
+  width: 89%;
+  background: #4d4b4b3d;
+  backdrop-filter: blur(8px);
+  border-radius: 15px;
+  margin-left: -4%;
+  margin-top: 10%;
+}
+
+.img {
+  width: 437px;
+  height: 350px;
+  border-radius: 40px;
+  margin-top: 7px;
+  margin-left: -59%;
+}
+
+.name {
+  color: white;
+  font-family: "Urbanist", sans-serif;
+  font-weight: 300;
+  margin-left: -60%;
+}
+
+.type {
+  color: white;
+  font-family: "Urbanist", sans-serif;
+  font-weight: 500;
+  margin-left: -59%;
+}
+
+.summary {
+  color: white;
+  font-family: "Urbanist", sans-serif;
+  font-weight: 300;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 40%;
+  margin-top: -48%;
+  font-size: 24px;
+}
+
+.diet {
+  color: white;
+  font-family: "Urbanist", sans-serif;
+  font-weight: 500;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-right: 12px;
+}
+
+.score {
+  color: white;
+  font-family: "Urbanist", sans-serif;
+  font-weight: 500;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-left: 14%;
+  margin-top: 25px;
+  font-size: 18px;
+}
+
+.level {
+  color: #ffffff;
+  font-family: "Urbanist", sans-serif;
+  font-weight: 500;
+  margin-left: -60%;
+  font-size: 18px;
+}
+
+.steps {
+  color: white;
+  font-family: "Urbanist", sans-serif;
+  font-weight: 300;
+  margin-left: 40%;
+  font-size: 23px;
+}
+
+.back-det {
+  display: flex;
+  margin-left: 50%;
+  margin-top: 10px;
+  padding: 1.3em 3em;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: #000;
+  background-color: #fff;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+  font-family: "Urbanist", sans-serif;
+  font-weight: 600;
+}
+
+.back-det:hover {
+  background-color: #e5c32e;
+  box-shadow: 0px 15px 20px rgba(253, 253, 253, 0.479);
+  color: #fff;
+  transform: translateY(-7px);
+}
+
+.back-det:active {
+  transform: translateY(-1px);
+}
+
+@media screen and (max-width: 480px) {
+  .container-detail {
+    background-image: url("../../img/Fondo4.jpg");
+    background-size: contain;
+    height: 400vh;
+    margin-top: -70px;
+  }
+
+  .detail {
+    display: inline-block;
+    width: 82%;
+    background: #4d4b4b3d;
+    backdrop-filter: blur(8px);
+    border-radius: 15px;
+    margin-left: 0%;
+    margin-top: 10%;
+  }
+
+  .img {
+    width: 250px;
+    height: 210px;
+    border-radius: 40px;
+    margin-top: 7px;
+    margin-left: 0%;
+  }
+
+  .name {
+    color: white;
+    font-family: "Urbanist", sans-serif;
+    font-size: 21px;
+    font-weight: 600;
+    margin-left: 0%;
+    margin-top: 57px;
+  }
+
+  .type {
+    color: white;
+    font-family: "Urbanist", sans-serif;
+    font-weight: 500;
+    margin-left: 0%;
+  }
+
+  .summary {
+    color: white;
+    font-family: "Urbanist", sans-serif;
+    font-weight: 300;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0%;
+    margin-top: 0%;
+    font-size: 18px;
+  }
+
+  .diet {
+    color: white;
+    font-family: "Urbanist", sans-serif;
+    font-weight: 500;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-right: 12px;
+  }
+
+  .score {
+    color: white;
+    font-family: "Urbanist", sans-serif;
+    font-weight: 500;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-left: 26%;
+    margin-top: -10px;
+    font-size: 18px;
+  }
+
+  .level {
+    color: #ffffff;
+    font-family: "Urbanist", sans-serif;
+    font-weight: 500;
+    margin-left: 0%;
+    font-size: 18px;
+  }
+
+  .steps {
+    color: white;
+    font-family: "Urbanist", sans-serif;
+    font-weight: 300;
+    margin-left: 0%;
+    font-size: 18px;
+  }
+
+  .back-det {
+    display: flex;
+    margin-left: 35%;
+    margin-top: 12px;
+    padding: 1.3em 3em;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #000;
+    background-color: #e5c32e;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+    font-family: "Urbanist", sans-serif;
+    font-weight: 600;
+  }
+
+  .back-det:hover {
+    background-color: #e5c32e;
+    box-shadow: 0px 15px 20px rgba(253, 253, 253, 0.479);
+    color: #fff;
+    transform: translateY(-7px);
+  }
+
+  .back-det:active {
+    transform: translateY(-1px);
+  }
+}

@@ -1,0 +1,92 @@
+.container-cards {
+    width: 319px;
+    height: 500px;
+    background: #4d4b4b3d;
+    margin: auto;
+    margin-top: auto;
+    margin-left: auto;
+    margin-left: 4%;
+    margin-top: 4%;
+    display: inline-flex;
+    backdrop-filter: blur(8px);
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+  }
+  .container-cards:hover{
+    transform: scale(1.1);
+  }
+  
+  .cards-name {
+    color:  #fff;
+  }
+  
+  .name-card {
+    color:rgb(246, 246, 246);
+    font-family: 'Urbanist', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    margin-top: 12px;
+  }
+  
+  .card-img{
+  width: 315px;
+  height: 255px;
+  filter: brightness(80%);
+  margin-top: -110px;
+  }
+
+  .card-img:hover{
+    filter: brightness(100%);
+  }
+  
+  .img-cards {
+    color: black;
+  }
+  
+  .card-diets{
+    font-family: 'Urbanist', sans-serif;
+    font-weight: 400;
+    font-size: 19px;
+  }
+
+.card-score{
+  display: flex;
+    margin-top: -34px;
+    margin-left: 100px;
+    color: yellow;
+}
+
+@media screen and (max-width: 480px){
+  .container-cards{
+    width: 280px;
+    margin-top: 12%;
+  }
+  .name-card {
+    color:rgb(246, 246, 246);
+    font-family: 'Urbanist', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    margin-top: 12px;
+  }
+
+  .card-img{
+    width: 280px;
+    height: 255px;
+    filter: brightness(80%);
+    margin-top: -110px;
+    }
+
+    .card-img:hover{
+      filter: brightness(100%);
+    }
+
+    .card-diets{
+      font-family: 'Urbanist', sans-serif;
+      font-weight: 400;
+      font-size: 16px;
+    }
+ 
+
+
+}

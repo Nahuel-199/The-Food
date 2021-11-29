@@ -1,0 +1,59 @@
+.pages{
+    width: 25px;
+}
+
+.number{
+    width: 15px;
+}
+
+.page-container{
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+.back{
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+.next{
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+.start {
+    color: rgb(0, 0, 0);
+    font-size: 26px;
+    cursor: pointer;
+}
+
+.end{
+    color: rgb(0, 0, 0);
+    font-size: 26px;
+    cursor: pointer;
+}
+
+.loading{
+    color: rgb(0, 0, 0);
+    font-size: 60px;
+    display: flex;
+    margin-left: 45%;
+}
+
+.gif-loading{
+  margin-top: -180px;
+  margin-left: 45px;
+  width: 80vh;
+}
+
+@media screen and (max-width: 480px){
+    .page-container{
+        margin-top: 30px;
+        margin-left: -5px;
+    }
+    .gif-loading{
+  margin-top: -180px;
+  margin-left: -70px;
+  width: 80vh;
+}
+}
