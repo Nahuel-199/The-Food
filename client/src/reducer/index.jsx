@@ -9,6 +9,7 @@ const initialState = {
 function rootReducer(state = initialState, action) {
     switch (action.type) {
         case "GET_RECIPES":
+            console.log('action', action.payload)
             return {
                 ...state,
                 recipe: action.payload,
@@ -34,16 +35,23 @@ function rootReducer(state = initialState, action) {
             return {
                 ...state
             }
-            case "FILTER_BY_TYPES":
-      const typesFil = state.filter2;
+        case "FILTER_BY_TYPES":
+            const typesFil = state.filter2;
 
-      const typeFiltered = action.payload === "All" ?
-      typesFil :     
-      typesFil.filter((el) => el.diets.includes(action.payload))
-      return {
-        ...state,
-        filter: typeFiltered
-      };
+            const typeFiltered = 
+             action.payload === "All" 
+             
+                ? typesFil 
+                : typesFil.filter((el) => 
+                  el.createdInDB 
+                  ? el.dietTypes.map((el) => el.name.includes(action.payload))
+                    : el.diets.includes(action.payload)
+                    );
+                    console.log('typesFilter', typeFiltered)
+            return {
+                ...state,
+                filter: typeFiltered
+            };
         case "ORDER_BY_HEALTHSCORE":
             const filterHealthScore =
                 action.payload === "max"
@@ -69,7 +77,7 @@ function rootReducer(state = initialState, action) {
                     });
             return {
                 ...state,
-                recipes: filterHealthScore,
+                filter: filterHealthScore,
             };
         case "ORDER_BY_NAME":
             const filterName =

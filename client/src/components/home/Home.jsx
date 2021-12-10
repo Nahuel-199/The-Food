@@ -11,7 +11,7 @@ const Home = () => {
 
     const dispatch = useDispatch();
 
-    const diet = useSelector((state) => state.diets);
+    const diets = useSelector((state) => state.diets);
 
      //estado para orderXname
      const[,setOrderName] = useState('');
@@ -66,7 +66,7 @@ const Home = () => {
             </select>
             <select className="selected-home" onChange={(e) => {handleFilterTypes(e)}}>
         <option value="All">Types</option>
-         {diet && diet.map((el) => {
+         {diets && diets.map((el) => {
            return <option key={el.id} value={el.name}>{el.name}</option>
           })}
      </select>

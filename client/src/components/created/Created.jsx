@@ -118,7 +118,7 @@ export default function Created() {
                         value={input.name}
                         name='name'
                         onChange={(e) => { handleChange(e) }}
-                        required='true'
+                        required
                     />
                     {errors.name && (
                         <p className="danger">{errors.name}</p>
@@ -147,7 +147,7 @@ export default function Created() {
                         value={input.resume}
                         name='resume'
                         onChange={(e) => { handleChange(e) }}
-                        required='true'
+                        required
                     />
                       {errors.resume && (
                         <p className="danger">{errors.resume}</p>
@@ -164,7 +164,7 @@ export default function Created() {
                         value={input.healthScore}
                         name='healthScore'
                         onChange={(e) => { handleChange(e) }}
-                        required='true'
+                        required
                     />
                      {errors.healthScore && (
                         <p className="danger">{errors.healthScore}</p>
@@ -215,7 +215,7 @@ export default function Created() {
                             {
                                 return <div className="buton-div" key={i}>
                                     <li>{el}</li>
-                                    <buton className="buton-form" onClick={() => { handleDelete(el); } }>❌</buton>
+                                    <button className="buton-form" onClick={() => { handleDelete(el); } }>❌</button>
                                 </div>;
                             }
                         )}

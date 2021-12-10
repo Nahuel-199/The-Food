@@ -1,5 +1,5 @@
 const { Router } = require('express');
-const { DietType } = require('../db');
+const { DietType, Recipe } = require('../db');
 const router = Router();
 
 router.get('/', async (req, res, next) => {
@@ -25,5 +25,6 @@ router.get('/', async (req, res, next) => {
         next(error)
     }
 });
+
 
 module.exports = router;

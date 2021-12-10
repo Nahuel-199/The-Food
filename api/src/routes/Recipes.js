@@ -36,6 +36,8 @@ const infoDB = async () => {
     })
 };
 
+
+
 //Concatenacion de informaciones API + DB
 
 const allRecipes = async () => {

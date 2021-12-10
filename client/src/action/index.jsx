@@ -14,6 +14,7 @@ export function getRecipes() {
     }
 }
 
+
 //traemos las types
 export function getDiets() {
     return async function(dispatch) {
@@ -89,6 +90,7 @@ export function getDetail (id) {
 
 //filtroXTypes
 export function filterXtypes(payload) {
+    console.log('types', payload)
     return {
         type: 'FILTER_BY_TYPES',
         payload

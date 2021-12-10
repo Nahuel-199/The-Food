@@ -93,6 +93,9 @@
     justify-content: space-around;
     font-size: 18px;
   }
+  .buton-form{
+    cursor: pointer;
+  }
   
   .type-submit {
     padding: 0.9em 2em;

@@ -18,7 +18,7 @@ router.post('/', async (req, res, next) => {
         let typeDB = await DietType.findAll({
             where: { name: diets },
         });
-        newRecipe.addDietType(typeDB);
+        await newRecipe.addDietType(typeDB);
         res.send(newRecipe);
 
     }catch (error) {
